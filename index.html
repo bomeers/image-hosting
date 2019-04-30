@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style>
+        #name-token {
+            margin: auto;
+            width: 50%;
+            padding-top: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="repo-token">
+        <div class="form-group row">
+            <label for="inputRepo" class="col-sm-2 col-form-label">Repository</label>
+            <div class="col-sm-10">
+                <input type="text" class="form-control" id="inputRepo" placeholder="Repository">
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="inputToken" class="col-sm-2 col-form-label">Token</label>
+            <div class="col-sm-10">
+                <input type="password" class="form-control" id="inputToken" placeholder="Token">
+            </div>
+        </div>
+        <button class="btn btn-primary" onclick="getData()">Submit</button>
+        <button class="btn btn-primary" id="show-download-btn" style="display: none;">Download All</button>
+        <br><br>
+        <div id="image-container"></div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.0.min.js" integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg=" crossorigin="anonymous"></script>
+    <script src="source.js"></script>
+</body>
+
+</html>

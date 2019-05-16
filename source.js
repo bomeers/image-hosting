@@ -44,7 +44,7 @@ function getData() {
             $.each(returnData, function () {
                 a = $('<a target="_blank"></a>');
                 a.attr('href', returnData[index].download_url);
-                img = $('<img height="150" style="padding: 5px;" >');
+                img = $('<img height="200" style="padding: 5px;" >');
                 img.attr('src', returnData[index].download_url);
                 img.appendTo(a);
                 a.appendTo(imageContainer);

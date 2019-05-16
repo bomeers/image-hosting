@@ -42,12 +42,12 @@ function getData() {
                 window.open('https://api.github.com/repos/bomeers/' + repoName + '/zipball/master?access_token=' + token);
             })
             $.each(returnData, function () {
-                a = $('<a target="_blank"></a>');
-                a.attr('href', returnData[index].download_url);
-                img = $('<img height="200" style="padding: 5px;" >');
+                //a = $('<a target="_blank"></a>');
+                //a.attr('href', returnData[index].download_url);
+                img = $('<img height="250" style="padding: 5px;" >');
                 img.attr('src', returnData[index].download_url);
-                img.appendTo(a);
-                a.appendTo(imageContainer);
+                img.appendTo(imageContainer);
+                //a.appendTo(imageContainer);
                 index++;
             });
         },

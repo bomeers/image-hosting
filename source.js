@@ -1,3 +1,24 @@
+$(document).ready(function () {
+    if (window.location.search.includes('?')) {
+        var repo = getUrlParameter('repo');
+        var token = getUrlParameter('token');
+
+        $('#inputRepo').val(repo);
+        $('#inputToken').val(token);
+    }
+});
+
+function getUrlParameter(sParam) {
+    var sPageUrl = window.location.search.substring(1);
+    var sURLVariables = sPageUrl.split('&');
+    for (var i = 0; i < sURLVariables.length; i++) {
+        var sParameterName = sURLVariables[i].split('=');
+        if (sParameterName[0] === sParam) {
+            return sParameterName[1];
+        }
+    }
+};
+
 function getData() {
     repoName = $("#inputRepo").val();
     token = $("#inputToken").val();
